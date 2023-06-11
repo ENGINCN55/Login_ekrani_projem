@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Login_ekranı_projem</string>
+    <string name="kullaniciAdi">User Name</string>
+    <string name="sifrfe" translatable="true">Pasword</string>
+    <string name="buttonYazi" translatable="true">Login</string>
+
+</resources>

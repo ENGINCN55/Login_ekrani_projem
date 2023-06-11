@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Login_ekranı_projem</string>
+    <string name="kullaniciAdi">Kullanıcı adı</string>
+    <string name="sifrfe" translatable="true">Şifre</string>
+    <string name="buttonYazi" translatable="true">Giriş</string>
+
 </resources>
