@@ -12,37 +12,33 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1"
         app:srcCompat="@drawable/account_circle" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="84dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginBottom="40dp"
+        android:layout_width="208dp"
+        android:layout_height="69dp"
+        android:layout_marginEnd="102dp"
         android:backgroundTint="#020101"
         android:ems="10"
         android:hint="@string/kullaniciAdi"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/editTextNumberPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.302" />
 
     <EditText
-        android:id="@+id/editTextNumberPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="100dp"
-        android:layout_marginBottom="373dp"
+        android:id="@+id/sifregir"
+        android:layout_width="209dp"
+        android:layout_height="77dp"
         android:backgroundTint="#000000"
         android:ems="10"
         android:hint="@string/sifrfe"
@@ -52,42 +48,85 @@
         android:textStyle="bold"
         app:barrierMargin="@dimen/cardview_compat_inset_shadow"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress" />
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.401" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="217dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="101dp"
-        android:layout_marginTop="270dp"
-        android:layout_marginEnd="112dp"
-        android:layout_marginBottom="272dp"
-        android:background="#DF1A1A"
+        android:id="@+id/buttonum"
+        android:layout_width="206dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="15dp"
+        android:autoLink="web"
+        android:background="@color/white"
         android:hint="@string/buttonYazi"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        android:textColor="#B30303"
+        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumberPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/sifregir"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="89dp"
         android:layout_height="25dp"
-        android:layout_marginStart="165dp"
-        android:layout_marginTop="275dp"
-        android:layout_marginEnd="189dp"
-        android:layout_marginBottom="14dp"
         android:background="#F69999"
         android:text="Yardım ?"
         android:textColor="#03A9F4"
         android:textSize="14sp"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="618dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="205dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="248dp"
+        android:text="şifremi unuttum"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.935"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.578" />
+        app:layout_constraintEnd_toEndOf="@+id/buttonum"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonum" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="658dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="666dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="410dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="102dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="100dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
