@@ -65,14 +65,14 @@
         android:layout_marginBottom="272dp"
         android:background="#DF1A1A"
         android:hint="@string/buttonYazi"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintBottom_toTopOf="@+id/yardim"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sifregir" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/yardim"
         android:layout_width="89dp"
         android:layout_height="25dp"
         android:layout_marginStart="165dp"

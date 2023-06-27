@@ -80,7 +80,7 @@
         app:layout_constraintTop_toBottomOf="@+id/sifregir" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/yardim"
         android:layout_width="211dp"
         android:layout_height="60dp"
         android:layout_marginStart="749dp"
